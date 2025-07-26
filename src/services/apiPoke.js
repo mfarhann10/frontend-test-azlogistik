@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const BASE_URL = "https://pokeapi.co/api/v2/"
 
 export async function getPoke(params = { limit: 20, offset: 0 }) {
   try {
