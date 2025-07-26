@@ -7,7 +7,7 @@ export async function getPoke(params = { limit: 20, offset: 0 }) {
       params,
     });
 
-    return res.data.results; // array of { name, url }
+    return res.data.results;
   } catch (err) {
     if (axios.isAxiosError(err)) {
       console.log(err.response?.data);
